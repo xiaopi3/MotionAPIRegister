@@ -11,3 +11,16 @@ D:\Github\MotionAPIRegister\MotionAPIRegister\bin\Debug\MotionAPIRegister.exe
 D:\Github\MotionAPIRegister\MotionAPIRegister\bin\Debug\MotionAPIRegister.pdb
 D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.exe
 D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.pdb
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\bin\Debug\MotionAPIRegister.exe.config
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.exe
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.pdb
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\bin\Debug\MotionAPIRegister.exe
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\bin\Debug\MotionAPIRegister.pdb
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\MainWindow.baml
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\MainWindow.g.cs
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\App.g.cs
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister_MarkupCompile.cache
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.g.resources
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.Properties.Resources.resources
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.csproj.GenerateResource.Cache
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.csprojResolveAssemblyReference.cache

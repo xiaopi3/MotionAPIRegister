@@ -58,35 +58,36 @@ namespace MotionAPIRegister
 
         private void bt_Click_Set(object sender, RoutedEventArgs e)
         {
-            UInt32 hRegisterML1000 = 0x00000000;
-            UInt32 hRegisterML1001 = 0x00000000;
+            UInt32 hRegisterML01000 = 0x00000000;
+            UInt32 hRegisterML01002 = 0x00000000;   //注意,L类型寄存器名只能为偶数!!
             UInt32[] dataML = new UInt32[1];
             
-            r = CMotionAPI.ymcGetRegisterDataHandle("ML1000", ref hRegisterML1000);
-            if (r != CMotionAPI.MP_SUCCESS)
-            {
-                MessageBox.Show(String.Format("获取寄存器引用错误 \n错误码 [ 0x{0} ]", r.ToString("X")));
-                return;
-            }
-            r = CMotionAPI.ymcGetRegisterDataHandle("ML1001", ref hRegisterML1001);
+            r = CMotionAPI.ymcGetRegisterDataHandle("ML01000", ref hRegisterML01000);
             if (r != CMotionAPI.MP_SUCCESS)
             {
                 MessageBox.Show(String.Format("获取寄存器引用错误 \n错误码 [ 0x{0} ]", r.ToString("X")));
                 return;
             }
 
-            dataML[0] = UInt32.Parse(S_ML1000.Text);
+            r = CMotionAPI.ymcGetRegisterDataHandle("ML01002", ref hRegisterML01002);
+            if (r != CMotionAPI.MP_SUCCESS)
+            {
+                MessageBox.Show(String.Format("获取寄存器引用错误 \n错误码 [ 0x{0} ]", r.ToString("X")));
+                return;
+            }
 
-            r = CMotionAPI.ymcSetRegisterData(hRegisterML1000, 1, dataML);
+            dataML[0] = UInt32.Parse(S_ML01000.Text);
+
+            r = CMotionAPI.ymcSetRegisterData(hRegisterML01000, 1, dataML);
             if (r != CMotionAPI.MP_SUCCESS)
             {
                 MessageBox.Show(String.Format("设置寄存器值错误 \n错误码 [ 0x{0} ]", r.ToString("X")));
                 return;
             }
 
-            dataML[0] = UInt32.Parse(S_ML1001.Text);
+            dataML[0] = UInt32.Parse(S_ML01002.Text);
 
-            r = CMotionAPI.ymcSetRegisterData(hRegisterML1001, 1, dataML);
+            r = CMotionAPI.ymcSetRegisterData(hRegisterML01002, 1, dataML);
             if (r != CMotionAPI.MP_SUCCESS)
             {
                 MessageBox.Show(String.Format("设置寄存器值错误 \n错误码 [ 0x{0} ]", r.ToString("X")));
@@ -96,38 +97,38 @@ namespace MotionAPIRegister
 
         private void bt_Click_Get(object sender, RoutedEventArgs e)
         {
-            UInt32 hRegisterML1000 = 0x00000000;
-            UInt32 hRegisterML1001 = 0x00000000;
+            UInt32 hRegisterML01000 = 0x00000000;
+            UInt32 hRegisterML01002 = 0x00000000;
             UInt32[] dataML = new UInt32[1];
             UInt32 pReadDataNumber=0;
 
-            r = CMotionAPI.ymcGetRegisterDataHandle("ML1000", ref hRegisterML1000);
+            r = CMotionAPI.ymcGetRegisterDataHandle("ML01000", ref hRegisterML01000);
             if (r != CMotionAPI.MP_SUCCESS)
             {
                 MessageBox.Show(String.Format("获取寄存器引用错误 \n错误码 [ 0x{0} ]", r.ToString("X")));
                 return;
             }
-            r = CMotionAPI.ymcGetRegisterDataHandle("ML1001", ref hRegisterML1001);
+            r = CMotionAPI.ymcGetRegisterDataHandle("ML01002", ref hRegisterML01002);
             if (r != CMotionAPI.MP_SUCCESS)
             {
                 MessageBox.Show(String.Format("获取寄存器引用错误 \n错误码 [ 0x{0} ]", r.ToString("X")));
                 return;
             }
 
-            CMotionAPI.ymcGetRegisterData(hRegisterML1000, 1, dataML, ref pReadDataNumber);
+            CMotionAPI.ymcGetRegisterData(hRegisterML01000, 1, dataML, ref pReadDataNumber);
             if (r != CMotionAPI.MP_SUCCESS)
             {
                 MessageBox.Show(String.Format("获取寄存器值错误 \n错误码 [ 0x{0} ]", r.ToString("X")));
                 return;
             }
-            G_ML1000.Text = dataML[0].ToString();
-            CMotionAPI.ymcGetRegisterData(hRegisterML1001, 1, dataML, ref pReadDataNumber);
+            G_ML01000.Text = dataML[0].ToString();
+            CMotionAPI.ymcGetRegisterData(hRegisterML01002, 1, dataML, ref pReadDataNumber);
             if (r != CMotionAPI.MP_SUCCESS)
             {
                 MessageBox.Show(String.Format("获取寄存器值错误 \n错误码 [ 0x{0} ]", r.ToString("X")));
                 return;
             }
-            G_ML1001.Text = dataML[0].ToString();
+            G_ML01002.Text = dataML[0].ToString();
         }
 
         private void bt_Click_Exit(object sender, RoutedEventArgs e)
@@ -140,6 +141,5 @@ namespace MotionAPIRegister
             }
             this.Close();
         }
-
     }
 }

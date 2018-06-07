@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\obj\Debug\
 MotionAPIRegister
 none
 false
-TRACE;DEBUG;WIN64
-D:\Github\MotionAPIRegister\MotionAPIRegister\App.xaml
+TRACE;DEBUG;WIN32
+C:\Users\ROBOT\Desktop\MotionAPIRegister\MotionAPIRegister\App.xaml
 11151548125
 
 9-1487696176
-12-1401562060
+121886138872
 MainWindow.xaml;
 
 False

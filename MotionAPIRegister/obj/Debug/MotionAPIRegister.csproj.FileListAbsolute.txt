@@ -1,0 +1,13 @@
+D:\Github\MotionAPIRegister\MotionAPIRegister\bin\Debug\MotionAPIRegister.exe.config
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.csprojResolveAssemblyReference.cache
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MainWindow.baml
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MainWindow.g.cs
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\App.g.cs
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister_MarkupCompile.cache
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.g.resources
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.Properties.Resources.resources
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.csproj.GenerateResource.Cache
+D:\Github\MotionAPIRegister\MotionAPIRegister\bin\Debug\MotionAPIRegister.exe
+D:\Github\MotionAPIRegister\MotionAPIRegister\bin\Debug\MotionAPIRegister.pdb
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.exe
+D:\Github\MotionAPIRegister\MotionAPIRegister\obj\Debug\MotionAPIRegister.pdb
